@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@id/toolbar"
+    android:background="#b5ccda"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.app.dna.manager.TransactionDetailActivity"
+    tools:showIn="@layout/activity_transaction_detail">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_blue">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/llSalary"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_margin="5dp"
+                android:gravity="center_vertical"
+                android:background="@drawable/white_rounded_bg"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvSalary"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:textColor="@color/theme_blue"
+                    android:gravity="center_horizontal"
+                    android:text="Salary" />
+
+                <TextView
+                    android:id="@+id/etSalary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:editable="false" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/rlTransacDetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="5dp"
+                android:background="@drawable/white_rounded_bg"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_vertical"
+                    android:text="Transaction Details" />
+
+                <ListView
+                    android:id="@+id/lvTransactions"
+                    android:layout_width="match_parent"
+                    android:layout_height="370dp" />
+            </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:id="@+id/llPaid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/white_rounded_bg"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tvPaid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:layout_marginLeft="5dp"
+                        android:text="Paid" />
+
+                    <TextView
+                        android:id="@+id/etPaidAmt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="15dp"
+                        android:layout_weight="0.25"
+                        android:text="5000" />
+
+                    <TextView
+                        android:id="@+id/tvDueAmt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="Due" />
+
+                    <TextView
+                        android:id="@+id/etDueAmt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_weight="0.25"
+                        android:textColor="#ca6546"
+                        android:text="5000" />
+
+                </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"></LinearLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/blue_rounded_bg"
+        android:gravity="center"
+        android:onClick="dialogFragment"
+        android:text="Add +"
+        android:textColor="#ffffff" />
+</LinearLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@color/theme_blue">
+
+    <TextView
+        android:id="@+id/tvSortByDate"
+        android:layout_height="50dp"
+        android:layout_width="match_parent"
+        android:text="Sort by Date"
+        android:layout_margin="8dp"
+        android:textSize="15sp"
+        android:textColor="@color/theme_blue"
+        android:background="@drawable/white_rounded_bg"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/tvPaymentDone"
+        android:layout_height="50dp"
+        android:layout_width="match_parent"
+        android:textColor="@color/theme_blue"
+        android:layout_margin="5dp"
+        android:textSize="15sp"
+        android:background="@drawable/white_rounded_bg"
+        android:gravity="center"
+        android:text="Payment done"/>
+
+
+</LinearLayout>
